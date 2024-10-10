@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  heliostime:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - API_KEY=api_key
+    restart: unless-stopped
